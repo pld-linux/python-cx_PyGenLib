@@ -1,5 +1,6 @@
 %define module cx_PyGenLib
 Summary:	Generic Python modules used by Computronix projects
+Summary(pl):	Podstawowe modu³y Pythona wykorzystywane w projektach Computroniksa
 Name:		python-%{module}
 Version:	2.2
 Release:	0.1
@@ -12,10 +13,17 @@ URL:		http://www.computronix.com/utilities.html
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-This project contains a number of generic Python modules that are used by
-Computronix for a number of projects (cx_Freeze, cx_OracleTools,
-cx_OracleDBATools, etc.) and as such they are handled independently, rather
-than bundled with the distribution of the dependent project.
+This project contains a number of generic Python modules that are used
+by Computronix for a number of projects (cx_Freeze, cx_OracleTools,
+cx_OracleDBATools, etc.) and as such they are handled independently,
+rather than bundled with the distribution of the dependent project.
+
+%description -l pl
+Ten projekt zawiera sporo podstawowych modu³ów Pythona, które s±
+wykorzystywane przez wiele projektów Computroniksa (cx_Freeze,
+cx_OracleTools, cx_OracleDBATools i in.), którymi mo¿na siê pos³ugiwaæ
+niezale¿nie i dla których nie ma powodu pakowania ich ³±cznie z
+odpowiednimi projektami.
 
 %prep
 %setup -q -n %{module}-%{version}
@@ -35,7 +43,7 @@ rm -f $RPM_BUILD_ROOT%{py_sitedir}/{modulefinder,textwrap,_strptime,optparse,tar
 %clean
 rm -rf $RPM_BUILD_ROOT
 
-%files 
+%files
 %defattr(644,root,root,755)
 %doc LICENSE.txt README.txt HISTORY.txt
 %{py_sitedir}/cx_*.py?
