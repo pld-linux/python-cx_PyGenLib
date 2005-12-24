@@ -3,7 +3,7 @@ Summary:	Generic Python modules used by Computronix projects
 Summary(pl):	Podstawowe modu³y Pythona wykorzystywane w projektach Computroniksa
 Name:		python-%{module}
 Version:	2.2
-Release:	0.1
+Release:	1
 License:	BSD
 Vendor:		Anthony Tuininga <anthony@computronix.com>
 Group:		Development/Libraries
@@ -33,12 +33,14 @@ env CFLAGS="%{rpmcflags}" python setup.py build
 
 %install
 rm -rf $RPM_BUILD_ROOT
-python setup.py install --root=$RPM_BUILD_ROOT
+python setup.py install \
+	--root=$RPM_BUILD_ROOT
 
 # check-files shutup
-rm -f $RPM_BUILD_ROOT%{py_sitedir}/*.py
+rm -f $RPM_BUILD_ROOT%{py_sitescriptdir}/*.py
+
 # this modules are in standard Python 2.3 distribution
-rm -f $RPM_BUILD_ROOT%{py_sitedir}/{modulefinder,textwrap,_strptime,optparse,tarfile}.py*
+rm -f $RPM_BUILD_ROOT%{py_sitescriptdir}/{modulefinder,textwrap,_strptime,optparse,tarfile}.py*
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -46,4 +48,4 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc LICENSE.txt README.txt HISTORY.txt
-%{py_sitedir}/cx_*.py?
+%{py_sitescriptdir}/cx_*.py?
