@@ -1,6 +1,6 @@
 %define	module	cx_PyGenLib
 Summary:	Generic Python modules used by Computronix projects
-Summary(pl):	Podstawowe modu³y Pythona wykorzystywane w projektach Computroniksa
+Summary(pl.UTF-8):   Podstawowe moduÅ‚y Pythona wykorzystywane w projektach Computroniksa
 Name:		python-%{module}
 Version:	2.2
 Release:	1
@@ -18,11 +18,11 @@ by Computronix for a number of projects (cx_Freeze, cx_OracleTools,
 cx_OracleDBATools, etc.) and as such they are handled independently,
 rather than bundled with the distribution of the dependent project.
 
-%description -l pl
-Ten projekt zawiera sporo podstawowych modu³ów Pythona, które s±
-wykorzystywane przez wiele projektów Computroniksa (cx_Freeze,
-cx_OracleTools, cx_OracleDBATools i in.), którymi mo¿na siê pos³ugiwaæ
-niezale¿nie i dla których nie ma powodu pakowania ich ³±cznie z
+%description -l pl.UTF-8
+Ten projekt zawiera sporo podstawowych moduÅ‚Ã³w Pythona, ktÃ³re sÄ…
+wykorzystywane przez wiele projektÃ³w Computroniksa (cx_Freeze,
+cx_OracleTools, cx_OracleDBATools i in.), ktÃ³rymi moÅ¼na siÄ™ posÅ‚ugiwaÄ‡
+niezaleÅ¼nie i dla ktÃ³rych nie ma powodu pakowania ich Å‚Ä…cznie z
 odpowiednimi projektami.
 
 %prep
