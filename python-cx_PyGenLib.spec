@@ -1,6 +1,6 @@
 %define	module	cx_PyGenLib
 Summary:	Generic Python modules used by Computronix projects
-Summary(pl.UTF-8):   Podstawowe moduły Pythona wykorzystywane w projektach Computroniksa
+Summary(pl.UTF-8):	Podstawowe moduły Pythona wykorzystywane w projektach Computroniksa
 Name:		python-%{module}
 Version:	2.2
 Release:	1
