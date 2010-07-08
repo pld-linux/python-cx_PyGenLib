@@ -3,7 +3,7 @@ Summary:	Generic Python modules used by Computronix projects
 Summary(pl.UTF-8):	Podstawowe moduły Pythona wykorzystywane w projektach Computroniksa
 Name:		python-%{module}
 Version:	2.2
-Release:	2
+Release:	3
 License:	BSD
 Vendor:		Anthony Tuininga <anthony@computronix.com>
 Group:		Development/Libraries
