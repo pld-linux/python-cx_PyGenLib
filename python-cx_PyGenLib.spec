@@ -10,6 +10,8 @@ Group:		Development/Libraries
 Source0:	http://dl.sourceforge.net/cx-freeze/%{module}-%{version}.tar.gz
 # Source0-md5:	8bccc5a5d96bbe5d79d94443c1af8a24
 URL:		http://www.computronix.com/utilities.html
+BuildRequires:	python-modules
+BuildRequires:	rpm-pythonprov
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
