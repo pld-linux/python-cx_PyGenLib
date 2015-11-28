@@ -31,12 +31,11 @@ odpowiednimi projektami.
 %setup -q -n %{module}-%{version}
 
 %build
-env CFLAGS="%{rpmcflags}" python setup.py build
+env CFLAGS="%{rpmcflags}" %py_build
 
 %install
 rm -rf $RPM_BUILD_ROOT
-python setup.py install \
-	--root=$RPM_BUILD_ROOT
+%py_install
 
 # check-files shutup
 rm -f $RPM_BUILD_ROOT%{py_sitescriptdir}/*.py
